@@ -1,5 +1,25 @@
-@import "tailwindcss";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+.primary-font{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+
+
+.secondery-font{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
