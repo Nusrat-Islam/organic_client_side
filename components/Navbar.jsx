@@ -7,7 +7,7 @@ import Logo from "./Logo";
 export default function Navbar() {
   return (
     <div>
-       <div className="navbar bg-base-100 shadow-sm">
+       <div className="navbar bg-base-100 shadow-sm sticky">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -16,15 +16,9 @@ export default function Navbar() {
       <ul
         tabIndex="-1"
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
+          <li><Link href="/">Home</Link></li>
+      <li><Link href="/items-list">Items List</Link></li>
+      <li><Link href="/items-details">Items Details</Link></li>
       </ul>
     </div>
     <Logo></Logo>
@@ -33,11 +27,23 @@ export default function Navbar() {
     <ul className="menu menu-horizontal px-1 text-black secondary-font text-xl">
       <li><Link href="/">Home</Link></li>
       <li><Link href="/items-list">Items List</Link></li>
-      <li><Link href="items-details">Items Details</Link></li>
+      <li><Link href="/items-details">Items Details</Link></li>
     </ul>
   </div>
   <div className="navbar-end">
-   <li><Link href="/login" className='btn btn-outline'>Login</Link></li>
+   <li><Link href="/login" className="
+               px-8 py-3 
+    font-semibold 
+    text-white 
+    primary-font 
+    rounded-xl 
+    shadow-md 
+    transition-all 
+    duration-300
+    bg-gradient-to-r from-green-700 to-[#9ACD32]
+    hover:bg-none
+    hover:bg-black
+    hover:scale-105">Login</Link></li>
   </div>
 </div>                                  
     </div>
