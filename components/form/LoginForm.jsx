@@ -27,8 +27,8 @@ export default function LoginPage() {
 
       toast.success("Login Successful!");
       
-      // ৩. Redirect to items page on success
-      router.push("/items"); 
+      // Redirect to items page on success
+      router.push("/items-list"); 
     } else {
       setError("Invalid email or password! Try admin@organic.com / password123");
     }
