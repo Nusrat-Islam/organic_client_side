@@ -10,7 +10,7 @@ export default function Footer() {
         
         {/* Brand & About */}
         <div className="md:col-span-1">
-         <Logo></Logo>
+      <Logo></Logo>
           <p className="text-green-100/70 text-sm leading-relaxed">
             We deliver 100% pure, chemical-free organic products directly from the farm to your doorstep. Your health is our top priority.
           </p>

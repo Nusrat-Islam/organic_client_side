@@ -39,7 +39,7 @@ export default function BestSellingProducts() {
                   {prod.title}
                 </h3>
                 <p className="secondary-font text-gray-600 font-medium">
-                  ৳{prod.price}
+                  ${prod.price}
                 </p>
               </div>
             </div>

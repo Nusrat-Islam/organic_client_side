@@ -8,11 +8,11 @@ export default function ItemListPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // এখানে আপনার নতুন রাউট 'items-list' ব্যবহার করুন
-    fetch('http://localhost:5000/items-list') 
+    
+    fetch('organic-rizq-server.vercel.app/items-list') 
       .then((res) => res.json())
       .then((data) => {
-        console.log("Data loaded:", data); // চেক করার জন্য
+        console.log("Data loaded:", data); 
         setItems(data);
         setLoading(false);
       })

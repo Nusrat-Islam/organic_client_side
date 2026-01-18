@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import Cookies from "js-cookie"; // কুকি ব্যবহারের জন্য
+import Cookies from "js-cookie";
 import toast from "react-hot-toast";
 
 export default function LoginPage() {
@@ -16,12 +16,12 @@ export default function LoginPage() {
     e.preventDefault();
     setError("");
 
-    // ১. Hardcoded Credentials (Mock Login)
+    // Hardcoded Credentials (Mock Login)
     const mockEmail = "admin@organic.com";
     const mockPassword = "password123";
 
     if (email === mockEmail && password === mockPassword) {
-      // ২. Store credentials in cookies (expires in 1 day)
+      // Store credentials in cookies (expires in 1 day)
       Cookies.set("isLoggedIn", "true", { expires: 1 });
       Cookies.set("userEmail", email, { expires: 1 });
 
