@@ -9,7 +9,7 @@ export default function ItemListPage() {
 
   useEffect(() => {
     
-    fetch('organic-rizq-server.vercel.app/items-list') 
+    fetch('https://organic-rizq-server.vercel.app/items-list') 
       .then((res) => res.json())
       .then((data) => {
         console.log("Data loaded:", data); 
@@ -41,7 +41,7 @@ export default function ItemListPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {items.map((item) => (
             <div 
-              key={item.id} 
+              key={item._id} 
               className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-green-50"
             >
               {/* Item Image */}

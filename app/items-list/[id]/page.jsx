@@ -11,7 +11,7 @@ export default function ItemDetails({ params: paramsPromise }) {
 
   useEffect(() => {
     if (id && id !== "undefined") {
-      fetch(`organic-rizq-server.vercel.app/items-list/${id}`)
+      fetch(`https://organic-rizq-server.vercel.app/items-list/${id}`)
         .then((res) => res.json())
         .then((data) => {
           setItem(data);
